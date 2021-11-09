@@ -1,0 +1,83 @@
+<div class="col">
+  <div class="card card-glass-white text-center text-white">
+    <div class="card-body">
+      <p>{{weather.applicable_date | date}}</p>
+      <div class="d-flex justify-content-center my-4" [ngSwitch]="weather.weather_state_abbr">
+        <div *ngSwitchCase="'sn'">
+          <div class="nube move-right-left list-days">
+            <div class="nieve move-top-drown position-relative top-50 mx-3"></div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'sl'">
+          <div class="nube move-right-left list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+            <div class="granizo move-top-drown position-relative mx-3"></div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'h'">
+          <div class="nube move-right-left list-days">
+            <div class="granizo move-top-drown position-relative top-50 mx-3"></div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'t'">
+          <div class="nube move-left-right position-relative top-0 list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+            <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+              style="z-index: 3; left: 25px;">
+            <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+              style="z-index: 3;">
+          </div>
+          <div class="nube move-right-left position-relative top-0 list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+            <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+              style="z-index: 3;">
+            <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+              style="z-index: 3; left: 25px;">
+          </div>
+        </div>
+        <div *ngSwitchCase="'hr'">
+          <div class="nube move-left-right position-relative top-0 list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+          </div>
+          <div class="nube move-right-left position-relative top-0 list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'lr'">
+          <div class="nube move-right-left position-relative top-0 list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'s'">
+          <div class="sol giro position-absolute list-days"></div>
+          <div class="nube move-right-left position-relative list-days">
+            <div class="gotas move-drown-top position-relative"></div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'hc'">
+          <div class="nube move-right-left position-relative list-days"></div>
+          <div class="sol giro position-absolute list-days"></div>
+          <div class="nube move-left-right position-relative list-days"></div>
+        </div>
+        <div *ngSwitchCase="'lc'">
+          <div class="sol giro position-absolute list-days"></div>
+          <div class="nube move-right-left position-relative list-days"></div>
+        </div>
+        <div *ngSwitchCase="'c'">
+          <div class="sol giro list-days"></div>
+        </div>
+        <div *ngSwitchDefault>
+          <!-- Colocar una imagen 404 climatica -->
+        </div>
+      </div>
+      <div class="float-start">
+        Min. <br> <i class="bi bi-thermometer-snow"></i> <span>{{rounded(weather.min_temp)}}</span>
+        <span>°C</span>
+      </div>
+      <div class="float-end">
+        Max. <br> <i class="bi bi-thermometer-sun"></i> <span>{{rounded(weather.max_temp)}}</span>
+        <span>°C</span>
+      </div>
+    </div>
+  </div>
+</div>

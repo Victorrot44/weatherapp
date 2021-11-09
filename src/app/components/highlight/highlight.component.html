@@ -1,0 +1,44 @@
+<div class="row row-cols-1 row-cols-md-2 g-2">
+  <div class="col">
+    <div class="card card-glass-white text-center text-white">
+      <div class="card-body">
+        <p>Estado del viento</p>
+        <h1>{{ rounded(wind) }} mpb</h1>
+        <p class="fs-5"><i class="bi bi-compass-fill"></i> {{windDirection}} </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-glass-white text-center text-white">
+      <div class="card-body">
+        <p>Humedad</p>
+        <h1 class="my-3">{{humidity}} %</h1>
+        <div class="col-11 mx-auto mb-1">
+          <div class="progress" style="height: 0.6rem;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100" style="width: {{humidity}}%"></div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="ms-3">0%</span> <span>50%</span> <span>100%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-glass-white text-center text-white">
+      <div class="card-body">
+        <p>Visibilidad</p>
+        <h1>{{visibility | number:  '2.1-1'}} Millas</h1>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-glass-white text-center text-white">
+      <div class="card-body">
+        <p>Presión Atmosférica</p>
+        <h1>{{rounded(air)}} mb </h1>
+      </div>
+    </div>
+  </div>
+</div>

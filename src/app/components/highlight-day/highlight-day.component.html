@@ -1,0 +1,75 @@
+<div class="d-block text-center">
+  <h3 class="display-3 fw-bold my-3">{{weather_state_name}}</h3>
+  <div class="d-flex justify-content-center my-5" [ngSwitch]="weather_state_abbreviation">
+    <div *ngSwitchCase="'sn'">
+      <div class="nube move-right-left">
+        <div class="nieve move-top-drown position-relative top-50 mx-3"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'sl'">
+      <div class="nube move-right-left">
+        <div class="gotas move-drown-top position-relative"></div>
+        <div class="granizo move-top-drown position-relative mx-3"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'h'">
+      <div class="nube move-right-left">
+        <div class="granizo move-top-drown position-relative top-50 mx-3"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'t'">
+      <div class="nube move-left-right position-relative top-0">
+        <div class="gotas move-drown-top position-relative"></div>
+        <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+          style="z-index: 3; left: 25px;">
+        <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+          style="z-index: 3;">
+      </div>
+      <div class="nube move-right-left position-relative top-0">
+        <div class="gotas move-drown-top position-relative"></div>
+        <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+          style="z-index: 3;">
+        <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
+          style="z-index: 3; left: 25px;">
+      </div>
+    </div>
+    <div *ngSwitchCase="'hr'">
+      <div class="nube move-left-right position-relative top-0">
+        <div class="gotas move-drown-top position-relative"></div>
+      </div>
+      <div class="nube move-right-left position-relative top-0">
+        <div class="gotas move-drown-top position-relative"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'lr'">
+      <div class="nube move-right-left position-relative top-0">
+        <div class="gotas move-drown-top position-relative"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'s'">
+      <div class="sol giro position-absolute"></div>
+      <div class="nube move-right-left position-relative">
+        <div class="gotas move-drown-top position-relative"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'hc'">
+      <div class="nube move-right-left position-relative"></div>
+      <div class="sol giro position-absolute"></div>
+      <div class="nube move-left-right position-relative"></div>
+    </div>
+    <div *ngSwitchCase="'lc'">
+      <div class="sol giro position-absolute"></div>
+      <div class="nube move-right-left position-relative"></div>
+    </div>
+    <div *ngSwitchCase="'c'">
+      <div class="sol giro"></div>
+    </div>
+    <div *ngSwitchDefault></div>
+  </div>
+  <h1 class="display-1 fw-bold my-3">
+    <i class="bi bi-thermometer-half me-2"></i>
+    <span>{{rounded(temperature)}}</span> <span>°C</span>
+  </h1>
+  <p class="fs-1 my-3"> {{today | date}}</p>
+  <p class="fs-1 my-3"> <i class="bi bi-geo-alt me-3"></i> <span>{{ubication}}</span> </p>
+</div>

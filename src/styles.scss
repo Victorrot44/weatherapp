@@ -1,1 +1,281 @@
-/* You can add global styles to this file, and also import other style files */
+/*!
+ * Animaciones
+ */
+.giro {
+  -webkit-animation: giro 5s linear infinite;
+  -moz-animation: giro 5s linear infinite;
+  -o-animation: giro 5s linear infinite;
+  animation: giro 5s linear infinite;
+}
+
+@-webkit-keyframes giro {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes giro {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-o-keyframes giro {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes giro {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.move-left-right {
+  -webkit-animation: left-right 3s infinite alternate;
+  -moz-animation: left-right 3s infinite alternate;
+  -o-animation: left-right 3s infinite alternate;
+  animation: left-right 3s infinite alternate;
+}
+
+@keyframes left-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 20px;
+  }
+}
+@-webkit-keyframes left-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 20px;
+  }
+}
+@-moz-keyframes left-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 20px;
+  }
+}
+@-o-keyframes left-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+.move-right-left {
+  -webkit-animation: right-left 3s infinite alternate;
+  -moz-animation: right-left 3s infinite alternate;
+  -o-animation: right-left 3s infinite alternate;
+  animation: right-left 3s infinite alternate;
+}
+
+@keyframes right-left {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 20px;
+  }
+}
+@-webkit-keyframes right-left {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 20px;
+  }
+}
+@-moz-keyframes right-left {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 20px;
+  }
+}
+@-o-keyframes right-left {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 20px;
+  }
+}
+
+.nube {
+  width: 150px;
+  height: 140px;
+  top: 30px;
+  background-image: url("./assets/images/cloud.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.list-days {
+  width: 130px !important;
+  height: 130px !important;
+}
+
+.gotas {
+  width: 140px;
+  height: 60px;
+  top: 80px;
+  background-image: url("./assets/images/gotas.png");
+  background-size: 400% 400%;
+  z-index: 3;
+}
+
+.move-drown-top {
+  -webkit-animation: animate-drops 4s ease-in-out infinite;
+  -moz-animation: animate-drops 4s ease-in-out infinite;
+  -o-animation: animate-drops 4s ease-in-out infinite;
+  animation: animate-drops 4s ease-in-out infinite;
+}
+
+.sol {
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/images/sun.png");
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+@keyframes animate-drops {
+  0% {
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+@-webkit-keyframes animate-drops {
+  0% {
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+@-moz-keyframes animate-drops {
+  0% {
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+
+.flash {
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+@-o-keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+.granizo {
+  width: 120px;
+  height: 90px;
+  background-image: url("./assets/images/hail.png");
+  background-size: 50% 50%;
+}
+
+.move-top-drown {
+  -webkit-animation: animate-top-drown 1s ease-in-out infinite;
+  -moz-animation: animate-top-drown 1s ease-in-out infinite;
+  -o-animation: animate-top-drown 1s ease-in-out infinite;
+  animation: animate-top-drown 1s ease-in-out infinite;
+}
+
+@keyframes animate-top-drown {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+@-webkit-keyframes animate-top-drown {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+@-moz-keyframes animate-top-drown {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+@-o-keyframes animate-top-drown {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+
+.nieve {
+  width: 120px;
+  height: 90px;
+  background-image: url("./assets/images/snow.png");
+  background-size: 50% 50%;
+}
+
+/*! Custom Bootstrap 5 */
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  padding: 6px 0px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.42857;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.dark-mode {
+  background-color: rgb(16, 14, 29);
+}
+
+.menu-dark-mode {
+  background-color: rgb(30, 33, 58);
+}
+
+.card-glass-white {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
