@@ -2,24 +2,24 @@
   <div class="card card-glass-white text-center text-white">
     <div class="card-body">
       <p>{{weather.applicable_date | date}}</p>
-      <div class="d-flex justify-content-center my-4" [ngSwitch]="weather.weather_state_abbr">
-        <div *ngSwitchCase="'sn'">
+      <div [ngSwitch]="weather.weather_state_abbr">
+        <div *ngSwitchCase="'sn'" class="d-flex justify-content-center my-4">
           <div class="nube move-right-left list-days">
             <div class="nieve move-top-drown position-relative top-50 mx-3"></div>
           </div>
         </div>
-        <div *ngSwitchCase="'sl'">
+        <div *ngSwitchCase="'sl'" class="d-flex justify-content-center my-4">
           <div class="nube move-right-left list-days">
             <div class="gotas move-drown-top position-relative"></div>
             <div class="granizo move-top-drown position-relative mx-3"></div>
           </div>
         </div>
-        <div *ngSwitchCase="'h'">
+        <div *ngSwitchCase="'h'" class="d-flex justify-content-center my-4">
           <div class="nube move-right-left list-days">
             <div class="granizo move-top-drown position-relative top-50 mx-3"></div>
           </div>
         </div>
-        <div *ngSwitchCase="'t'">
+        <div *ngSwitchCase="'t'" class="d-flex justify-content-center my-4">
           <div class="nube move-left-right position-relative top-0 list-days">
             <div class="gotas move-drown-top position-relative"></div>
             <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
@@ -35,7 +35,7 @@
               style="z-index: 3; left: 25px;">
           </div>
         </div>
-        <div *ngSwitchCase="'hr'">
+        <div *ngSwitchCase="'hr'" class="d-flex justify-content-center my-4">
           <div class="nube move-left-right position-relative top-0 list-days">
             <div class="gotas move-drown-top position-relative"></div>
           </div>
@@ -43,30 +43,30 @@
             <div class="gotas move-drown-top position-relative"></div>
           </div>
         </div>
-        <div *ngSwitchCase="'lr'">
+        <div *ngSwitchCase="'lr'" class="d-flex justify-content-center my-4">
           <div class="nube move-right-left position-relative top-0 list-days">
             <div class="gotas move-drown-top position-relative"></div>
           </div>
         </div>
-        <div *ngSwitchCase="'s'">
+        <div *ngSwitchCase="'s'" class="d-flex justify-content-center my-4">
           <div class="sol giro position-absolute list-days"></div>
           <div class="nube move-right-left position-relative list-days">
             <div class="gotas move-drown-top position-relative"></div>
           </div>
         </div>
-        <div *ngSwitchCase="'hc'">
+        <div *ngSwitchCase="'hc'" class="d-flex justify-content-center my-4">
           <div class="nube move-right-left position-relative list-days"></div>
           <div class="sol giro position-absolute list-days"></div>
           <div class="nube move-left-right position-relative list-days"></div>
         </div>
-        <div *ngSwitchCase="'lc'">
+        <div *ngSwitchCase="'lc'" class="d-flex justify-content-center my-4">
           <div class="sol giro position-absolute list-days"></div>
           <div class="nube move-right-left position-relative list-days"></div>
         </div>
-        <div *ngSwitchCase="'c'">
+        <div *ngSwitchCase="'c'" class="d-flex justify-content-center my-4">
           <div class="sol giro list-days"></div>
         </div>
-        <div *ngSwitchDefault>
+        <div *ngSwitchDefault class="d-flex justify-content-center my-4">
           <!-- Colocar una imagen 404 climatica -->
         </div>
       </div>

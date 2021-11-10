@@ -1,26 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MetaweatherService } from './services/metaweather.service';
-/*
-interface Weather {
-  ubication : string;
-  result: any;
-  today: {
-    air_pressure           : number,
-    applicable_date        : string,
-    humidity               : number,
-    max_temp               : number,
-    min_temp               : number,
-    predictability         : number,
-    the_temp               : number,
-    visibility             : number,
-    weather_state_abbr     : string,
-    weather_state_name     : string,
-    wind_direction         : number,
-    wind_direction_compass : string,
-    wind_speed             : number
-  }
-}
-*/
 
 @Component({
   selector: 'app-root',
@@ -32,7 +11,7 @@ export class AppComponent implements OnInit {
   public latitude    : any;
   public longitude   : any;
   public woeid       : any;
-  public dataWeather : any;
+  public dataWeather : any = {};
 
   public date  = new Date();
   public year  = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(this.date);
@@ -73,11 +52,12 @@ export class AppComponent implements OnInit {
 
   getDataWeather(woeid: number) {
     this.weather.getDataWeather(woeid).subscribe(data => {
+      console.log(data);
       let result = [];
       let todayNow = {};
       let ubicacionNow = data.title || '' ;
       for (let i = 0; i < data.consolidated_weather.length; i++) {
-        if (i === 0) {
+        if (data.consolidated_weather[i].applicable_date == this.today ) {
           todayNow = {
             air_pressure           : data.consolidated_weather[i].air_pressure,
             applicable_date        : data.consolidated_weather[i].applicable_date,
@@ -95,6 +75,7 @@ export class AppComponent implements OnInit {
           }
         } else {
           result.push(data.consolidated_weather[i]);
+
         }
       }
 
@@ -103,9 +84,6 @@ export class AppComponent implements OnInit {
         today: todayNow,
         result : result
       }
-
-      console.log(this.dataWeather);
-
     });
   }
 }

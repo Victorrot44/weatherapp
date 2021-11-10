@@ -1,20 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <title>WeatherApp</title>
-  <!-- <meta content='(url:site)' property='og:url'/> -->
-  <!-- <meta content='Aplicación Meteorológica, Consulta el Estado del Tiempo' property='og:title'/> -->
-  <!-- <meta content='Consulta el estado del tiempo y evita imprevistos' property='og:description'/> -->
-  <!-- <meta content='(url:img)' property='og:image'/> -->
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
+  <link rel="icon" type="image/png" size="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png">
+  <meta name="language" content="ES">
+  <meta name="robots" content="index,follow" />
+  <meta name="autor" content="Victorrot">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, Angular, Front-End, Frontend, API´s, API, API MetaWeather, WeatherApp">
+  <meta name="description"
+    content="Aplicación Meteorológica Desarrollada en Angular e Implentando la API de MetaWeather">
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:type" content="website" />
+  <meta property='og:title' content='Aplicación Meteorológica, Consulta el Estado del Tiempo' />
+  <meta property='og:description' content='Consulta el estado del tiempo y evita imprevistos' />
+  <meta property="og:site_name" content="Aplicación Meteorológica, Consulta el Estado del Tiempo" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@victorrot44" />
+  <meta name="twitter:title" content="App Meteorológica Desarrollada en Angular" />
+  <meta name="twitter:description"
+    content="Aplicación Meteorológica Desarrollada en Angular e Implentando la API de MetaWeather" />
+  <meta name="theme-color" content="rgb(16, 14, 29)">
+  <meta name="application-name" content="WeatherApp" />
 </head>
 
 <body class="dark-mode">
-  <app-root></app-root>
+  <app-root>
+    <div class="position-fixed w-100 h-100 dark-mode d-flex align-items-center justify-content-center"
+      style="z-index: 10;">
+      <div class="text-white">
+        <div class="d-flex justify-content-center">
+          <div class="sol giro"></div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="text-uppercase fw-bold fs-1">Cargando</p>
+          <div class="spinner-grow spinner-grow-sm mx-2" role="status"></div>
+          <div class="spinner-grow spinner-grow-sm mx-2" role="status"></div>
+          <div class="spinner-grow spinner-grow-sm mx-2" role="status"></div>
+        </div>
+      </div>
+    </div>
+  </app-root>
 </body>
 
 </html>

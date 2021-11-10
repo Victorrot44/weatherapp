@@ -1,27 +1,61 @@
-# WeatherApp
+# WeatherApp :sunny:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+Aplicación web del clima.
 
-## Development server
+## Índice de Contenido
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **[Acerca del Proyecto](#about)**
+- **[Tecnologías Implementadas](#technologies)**
+- **[Instalación](#install)**
+- **[Datos de Contacto](#contact)**
+- **[Licencia](#license)**
 
-## Code scaffolding
+<a name="about"></a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Acerca del Proyecto
 
-## Build
+Es una aplicación web responsive que consulta mediante una api el estado clima.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<a name="technologies"></a>
 
-## Running unit tests
+## Tecnologías Implementadas :hammer_and_wrench:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Angular](https://angular.io)
+- [Api Metaweather](https://www.metaweather.com/api/)
+- [Boostrap v5](https://getbootstrap.com)
 
-## Running end-to-end tests
+<a name="install"></a>
+##Instalación :eye:
+Clone el proyecto.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+git clone https://github.com/Victorrot44/weatherapp.git
+```
 
-## Further help
+Instalar dependencias.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+npm install
+```
+
+Ejecutar proyecto en entorno de desarrollo.
+
+```
+npm run start
+```
+
+> **Nota:** para más información consulte [Angular CLI Comandos](https://github.com/Victorrot44/)
+
+<a name="contact"></a>
+
+## Contactarme por:
+
+- Linkedin [Victor Rodriguez](https://www.linkedin.com/in/Victorrot44/)
+- Twitter [@victorrot44](https://twitter.com/victorrot44)
+
+<a name="license"></a>
+
+## Licencia :page_with_curl
+
+Copyright &copy; 2021 **[Victorrot44](https://github.com/Victorrot44)**
+Este proyecto tiene licencia del **[MIT]()**

@@ -1,9 +1,12 @@
-<app-menu></app-menu>
+<app-spinner></app-spinner>
+
+<app-menu (woeid)="getDataWeather($event)"></app-menu>
 
 <main class="container-fluid">
   <div class="row">
-    <div class="col-md-4">
-      <div class="d-flex align-items-center justify-content-center h-100 bg-dark text-white">
+    <div class="col-md-4 p-0">
+      <div class="d-flex align-items-center justify-content-center h-100 bg-dark text-white p-0 m-0"
+        style="min-height: 100vh;">
 
         <app-highlight-day [today]="dataWeather.today.applicable_date"
           [weather_state_name]="dataWeather.today.weather_state_name" [temperature]="dataWeather.today.the_temp"
@@ -14,7 +17,7 @@
     </div>
     <div class="col-md-8 py-5">
 
-      <div class="row row-cols-2 row-cols-xl-5 g-2">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-2">
         <div *ngFor="let item of dataWeather.result">
           <app-list-days-weather [weather]="item" *ngIf="item.applicable_date != today"></app-list-days-weather>
         </div>

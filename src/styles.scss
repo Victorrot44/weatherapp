@@ -279,3 +279,13 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
+.list-group-item-dark-mode {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #1e213a;
+  margin-bottom: 0.5rem;
+}

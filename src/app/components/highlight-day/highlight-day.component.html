@@ -1,23 +1,23 @@
 <div class="d-block text-center">
   <h3 class="display-3 fw-bold my-3">{{weather_state_name}}</h3>
-  <div class="d-flex justify-content-center my-5" [ngSwitch]="weather_state_abbreviation">
-    <div *ngSwitchCase="'sn'">
+  <div [ngSwitch]="weather_state_abbreviation">
+    <div *ngSwitchCase="'sn'" class="d-flex justify-content-center my-5">
       <div class="nube move-right-left">
         <div class="nieve move-top-drown position-relative top-50 mx-3"></div>
       </div>
     </div>
-    <div *ngSwitchCase="'sl'">
+    <div *ngSwitchCase="'sl'" class="d-flex justify-content-center my-5">
       <div class="nube move-right-left">
         <div class="gotas move-drown-top position-relative"></div>
         <div class="granizo move-top-drown position-relative mx-3"></div>
       </div>
     </div>
-    <div *ngSwitchCase="'h'">
+    <div *ngSwitchCase="'h'" class="d-flex justify-content-center my-5">
       <div class="nube move-right-left">
         <div class="granizo move-top-drown position-relative top-50 mx-3"></div>
       </div>
     </div>
-    <div *ngSwitchCase="'t'">
+    <div *ngSwitchCase="'t'" class="d-flex justify-content-center my-5">
       <div class="nube move-left-right position-relative top-0">
         <div class="gotas move-drown-top position-relative"></div>
         <img src="./assets/images/flash.png" class="position-absolute flash bottom-0" alt="Relampago"
@@ -33,7 +33,7 @@
           style="z-index: 3; left: 25px;">
       </div>
     </div>
-    <div *ngSwitchCase="'hr'">
+    <div *ngSwitchCase="'hr'" class="d-flex justify-content-center my-5">
       <div class="nube move-left-right position-relative top-0">
         <div class="gotas move-drown-top position-relative"></div>
       </div>
@@ -41,27 +41,27 @@
         <div class="gotas move-drown-top position-relative"></div>
       </div>
     </div>
-    <div *ngSwitchCase="'lr'">
+    <div *ngSwitchCase="'lr'" class="d-flex justify-content-center my-5">
       <div class="nube move-right-left position-relative top-0">
         <div class="gotas move-drown-top position-relative"></div>
       </div>
     </div>
-    <div *ngSwitchCase="'s'">
+    <div *ngSwitchCase="'s'" class="d-flex justify-content-center my-5">
       <div class="sol giro position-absolute"></div>
       <div class="nube move-right-left position-relative">
         <div class="gotas move-drown-top position-relative"></div>
       </div>
     </div>
-    <div *ngSwitchCase="'hc'">
-      <div class="nube move-right-left position-relative"></div>
-      <div class="sol giro position-absolute"></div>
+    <div *ngSwitchCase="'hc'" class="d-flex justify-content-center my-5">
       <div class="nube move-left-right position-relative"></div>
-    </div>
-    <div *ngSwitchCase="'lc'">
       <div class="sol giro position-absolute"></div>
       <div class="nube move-right-left position-relative"></div>
     </div>
-    <div *ngSwitchCase="'c'">
+    <div *ngSwitchCase="'lc'" class="d-flex justify-content-center my-5">
+      <div class="sol giro position-absolute"></div>
+      <div class="nube move-right-left position-relative"></div>
+    </div>
+    <div *ngSwitchCase="'c'" class="d-flex justify-content-center my-5">
       <div class="sol giro"></div>
     </div>
     <div *ngSwitchDefault></div>
