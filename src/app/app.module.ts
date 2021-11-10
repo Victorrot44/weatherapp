@@ -11,7 +11,6 @@ import { HighlightComponent } from './components/highlight/highlight.component';
 
 import { SpinnerModule } from './components/spinner/spinner.module';
 import { SpinnerInterceptor } from './components/spinner/spinner.interceptor';
-// import { SpinnerService } from './components/spinner/spinner.service';
 
 @NgModule({
   declarations: [

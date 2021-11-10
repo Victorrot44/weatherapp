@@ -1,10 +1,10 @@
 <nav class="nav navbar-expand navbar-dark fixed-sm-bottom text-lg menu-dark-mode">
   <ul class="navbar-nav nav-justified w-100">
     <li class="nav-item pt-1 order-1 order-sm-0">
-      <a href="https://victorrot44.github.io/weatherapp/" class="nav-link text-white"> WeatherApp </a>
+      <a href="/" class="nav-link text-white"> WeatherApp </a>
     </li>
     <li class="nav-item pt-1 order-0 order-sm-1">
-      <a href="https://victorrot44.github.io/weatherapp/" class="nav-link"> <i class="bi bi-geo-alt"></i> </a>
+      <a href="" class="nav-link"> <i class="bi bi-geo-alt"></i> </a>
     </li>
     <li class="nav-item pt-1 order-2">
       <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
@@ -34,7 +34,6 @@
   <div class="offcanvas-body">
     <div *ngIf="city.value != ''">
       <div *ngIf="listCities.length > 0; else elseBlock">
-
         <div class="col-10 col-md-5 mx-auto">
           <div class="list-group">
             <a href="#" class="list-group-item-dark-mode list-group-item-action" *ngFor="let city of listCities"

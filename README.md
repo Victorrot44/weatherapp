@@ -2,6 +2,14 @@
 
 Aplicación web del clima.
 
+## Demo :globe_with_meridians:
+
+[Demo](https://victorrot44.github.io/weatherapp/);
+
+## Vista Previa
+
+![Weather App](https://github.com/Victorrot44/weatherapp/blob/main/src/assets/images/screenshot.gif)
+
 ## Índice de Contenido
 
 - **[Acerca del Proyecto](#about)**
