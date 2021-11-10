@@ -22,7 +22,7 @@ Aplicación web del clima.
 
 ## Acerca del Proyecto
 
-Es una aplicación web responsive que consulta mediante una api el estado clima.
+Es una aplicación web responsive que consulta el estado del clima mediante una api.
 
 <a name="technologies"></a>
 
