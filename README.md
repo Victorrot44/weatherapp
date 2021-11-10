@@ -4,7 +4,7 @@ Aplicación web del clima.
 
 ## Demo :globe_with_meridians:
 
-[Demo](https://victorrot44.github.io/weatherapp/);
+[Ver Demo](https://victorrot44.github.io/weatherapp/)
 
 ## Vista Previa
 
