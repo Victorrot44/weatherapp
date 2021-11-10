@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="utf-8">
+  <title>WeatherApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="https://victorrot44.github.com/weatherapp">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
+  <link rel="icon" type="image/png" size="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png">
+  <meta name="language" content="ES">
+  <meta name="robots" content="index,follow">
+  <meta name="autor" content="Victorrot">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Angular, Front-End, Frontend, API´s, API, API MetaWeather, WeatherApp">
+  <meta name="description" content="Aplicación Meteorológica Desarrollada en Angular e Implentando la API de MetaWeather">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aplicación Meteorológica, Consulta el Estado del Tiempo">
+  <meta property="og:description" content="Consulta el estado del tiempo y evita imprevistos">
+  <meta property="og:site_name" content="Aplicación Meteorológica, Consulta el Estado del Tiempo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@victorrot44">
+  <meta name="twitter:title" content="App Meteorológica Desarrollada en Angular">
+  <meta name="twitter:description" content="Aplicación Meteorológica Desarrollada en Angular e Implentando la API de MetaWeather">
+  <meta name="theme-color" content="rgb(16, 14, 29)">
+  <meta name="application-name" content="WeatherApp">
+<style>@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13, 110, 253;--bs-secondary-rgb:108, 117, 125;--bs-success-rgb:25, 135, 84;--bs-info-rgb:13, 202, 240;--bs-warning-rgb:255, 193, 7;--bs-danger-rgb:220, 53, 69;--bs-light-rgb:248, 249, 250;--bs-dark-rgb:33, 37, 41;--bs-white-rgb:255, 255, 255;--bs-black-rgb:0, 0, 0;--bs-body-color-rgb:33, 37, 41;--bs-body-bg-rgb:255, 255, 255;--bs-font-sans-serif:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--bs-font-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff}*,*:before,*:after{box-sizing:border-box}@media (prefers-reduced-motion: no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}p{margin-top:0;margin-bottom:1rem}@keyframes spinner-grow{0%{transform:scale(0)}50%{opacity:1;transform:none}}.spinner-grow{display:inline-block;width:2rem;height:2rem;vertical-align:-.125em;background-color:currentColor;border-radius:50%;opacity:0;animation:.75s linear infinite spinner-grow}.spinner-grow-sm{width:1rem;height:1rem}@media (prefers-reduced-motion: reduce){.spinner-grow{animation-duration:1.5s}}.d-flex{display:flex!important}.position-fixed{position:fixed!important}.w-100{width:100%!important}.h-100{height:100%!important}.justify-content-center{justify-content:center!important}.align-items-center{align-items:center!important}.mx-2{margin-right:.5rem!important;margin-left:.5rem!important}.fs-1{font-size:calc(1.375rem + 1.5vw)!important}.fw-bold{font-weight:700!important}.text-uppercase{text-transform:uppercase!important}.text-white{--bs-text-opacity:1;color:rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important}@media (min-width: 1200px){.fs-1{font-size:2.5rem!important}}.giro{animation:giro 5s linear infinite}@keyframes giro{to{-webkit-transform:rotate(360deg)}}.sol{width:150px;height:150px;background-image:url(sun.4e9a96de7fd09b22.png);background-size:100% 100%;z-index:1}.dark-mode{background-color:#100e1d}</style><link rel="stylesheet" href="styles.e759ada1e51a9aa9.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.e759ada1e51a9aa9.css"></noscript></head>
+
+<body class="dark-mode">
+  <app-root>
+    <div class="position-fixed w-100 h-100 dark-mode d-flex align-items-center justify-content-center" style="z-index: 10;">
+      <div class="text-white">
+        <div class="d-flex justify-content-center">
+          <div class="sol giro"></div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="text-uppercase fw-bold fs-1">Cargando</p>
+          <div class="spinner-grow spinner-grow-sm mx-2" role="status"></div>
+          <div class="spinner-grow spinner-grow-sm mx-2" role="status"></div>
+          <div class="spinner-grow spinner-grow-sm mx-2" role="status"></div>
+        </div>
+      </div>
+    </div>
+  </app-root>
+<script src="runtime.b487c660ddb2cde6.js" type="module"></script><script src="polyfills.8621f1e05052930e.js" type="module"></script><script src="scripts.15eda715d08c6836.js" defer></script><script src="main.241bf2a5f53d4a26.js" type="module"></script>
+
+
+</body></html>
