@@ -25,7 +25,9 @@ Es una aplicación web responsive que consulta mediante una api el estado clima.
 - [Boostrap v5](https://getbootstrap.com)
 
 <a name="install"></a>
-##Instalación :eye:
+
+## Instalación :eye:
+
 Clone el proyecto.
 
 ```
@@ -44,7 +46,7 @@ Ejecutar proyecto en entorno de desarrollo.
 npm run start
 ```
 
-> **Nota:** para más información consulte [Angular CLI Comandos](https://github.com/Victorrot44/)
+> **Nota:** para más información consulte [Angular CLI Comandos](https://github.com/Victorrot44/weatherapp/blob/main/Commands-Angular-CLI.md)
 
 <a name="contact"></a>
 
@@ -55,7 +57,7 @@ npm run start
 
 <a name="license"></a>
 
-## Licencia :page_with_curl
+## Licencia :page_with_curl:
 
 Copyright &copy; 2021 **[Victorrot44](https://github.com/Victorrot44)**
-Este proyecto tiene licencia del **[MIT]()**
+Este proyecto tiene licencia del **[MIT](https://github.com/Victorrot44/weatherapp/blob/main/LICENSE)**
